@@ -15,6 +15,8 @@ public:
     Weapon(string name, int damage);
     int getDamage();
     void setName(string);
+    string getName();
+    void setDamage(int);
     void setFromConsole();
 private:
     int mDamage = 10;

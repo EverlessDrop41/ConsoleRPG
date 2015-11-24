@@ -30,3 +30,11 @@ void Weapon::setFromConsole() {
     std::cin >> this->mDamage;
 
 }
+
+string Weapon::getName() {
+    return mName;
+}
+
+void Weapon::setDamage(int damage) {
+    mDamage = damage;
+}

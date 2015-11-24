@@ -18,6 +18,8 @@ public:
     Player(string);
     Player(Weapon);
     string getNameInput();
+    string getName();
+    int getExperience();
     void addExperience(int);
 
 private:

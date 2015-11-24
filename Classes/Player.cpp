@@ -27,3 +27,11 @@ Player::Player(Weapon weapon) {
 Player::Player(string name) {
     mName = name;
 }
+
+string Player::getName() {
+    return mName;
+}
+
+int Player::getExperience() {
+    return mExperience;
+}
