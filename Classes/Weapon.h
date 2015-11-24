@@ -18,6 +18,7 @@ public:
     string getName();
     void setDamage(int);
     void setFromConsole();
+    string toString();
 private:
     int mDamage = 10;
     string mName;

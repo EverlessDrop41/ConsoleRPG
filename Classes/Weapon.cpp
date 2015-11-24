@@ -3,6 +3,7 @@
 //
 
 #include <iostream>
+#include <sstream>
 #include "Weapon.h"
 
 void Weapon::setName(string name) {
@@ -37,4 +38,10 @@ string Weapon::getName() {
 
 void Weapon::setDamage(int damage) {
     mDamage = damage;
+}
+
+string Weapon::toString() {
+    std::stringstream fmt;
+    fmt << mName << " which deals a damage of " << mDamage << " units.";
+    return fmt.str();
 }
